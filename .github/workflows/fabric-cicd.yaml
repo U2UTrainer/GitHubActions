@@ -1,0 +1,14 @@
+
+name: fabric-cicd example
+
+#Run the workflow manually
+on: workflow_dispatch
+
+jobs:
+  Deploy_To_Test:
+    name: Deploy to Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name:Setup Phyton
+        uses: actions/
