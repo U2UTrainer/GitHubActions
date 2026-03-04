@@ -1,0 +1,26 @@
+
+name: Basic Worklow
+
+on:
+  workflow_dispatch: 
+    #Inputs for the workflow
+    inputs:
+      city:
+        description: "Name of a City:"
+        required: true
+        default: "Brussels"
+        type: string
+
+#A workflow runs one or more Jobs
+jobs:
+  greet:
+    name: "A simple Job"
+    runs-on: ubuntu-latest
+
+    #Steps represent a series of tasks
+    steps:
+      - name: Say Hellow
+        run: |
+          echo "Hello World Step 1"
+          echo "Step 1 is done"
+      
