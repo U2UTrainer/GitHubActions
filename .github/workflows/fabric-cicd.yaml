@@ -10,5 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name:Setup Phyton
-        uses: actions/
+      - name: Setup Phyton
+        uses: actions/setup-python@v6.2.0
+      - name: Install Libraries
+        run: |
+          python -m pip install --upgrade pip
+          pip install ms-fabric-cli
+          pip install fabric-cicd
+        
