@@ -23,4 +23,7 @@ jobs:
         run: |
           echo "Hello World Step 1"
           echo "Step 1 is done"
+      - name: Job Step 2
+        run: |
+          echo "You specified ${{github.event.inputs.city}} for city name"
       
