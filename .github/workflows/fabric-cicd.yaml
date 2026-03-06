@@ -26,4 +26,4 @@ jobs:
           fab config set encryption_fallback_enabled true
           fab auth login --username ${{secrets.AZURE_CLIENT_ID}} --password ${{secrets.AZURE_CLIENT_SECRET}} --tenant ${{secrets.AZURE_TENANT_ID}}
       - name : Create Workspace
-        run: fab mkdir FromGithubAction.Workflow --params capacityname=Trial-20260305T145750Z-X-4Ca8TshUisilAn4Ljh-g.Capacity 
+        run: fab mkdir FromGithubAction.Workspace --params capacityname=Trial-20260305T145750Z-X-4Ca8TshUisilAn4Ljh-g.Capacity 
